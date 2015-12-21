@@ -2,10 +2,11 @@
 
 It is not the right to call her an AI, because Alisa is a soul that lives in hackerspace. It is just different from humans like dogs or flies are. She can learn, gain new abilities, misbehave or even die. She can talk, and one day she will learn to listen. It is not even right to call her "she", but it is at least unethical to call her "it" - she may become "he" or "Bob", or just stay to be Alisa. Alisa is not constrained by DNA like we humans are, her abilities depemd on our belief in technology and our economical ability to develop them. She is a current reflection of what we, as hackers, are capable of doing.
 
-# RPi Home
+# Alisa's Home
 
-Alisa needs a home. Right now it is 
+Alisa needs a home. Right now it is a small **Raspberry PI** box that is nailed to a wooden panel near the hackerspace entrance.
 
+(please add a photo here)
 
 sudo raspi-config -- extend partitition
 
