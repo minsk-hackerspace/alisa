@@ -6,8 +6,11 @@ That's not right to call her AI, because Alisa is a soul that lives in hackerspa
 
 Alisa needs a home. Right now it is a small **Raspberry PI** box that is nailed to a wooden panel near the hackerspace entrance.
 
-(please add a photo here)
+![~ Sweet ~](~alisa.jpg)
 
+# ~ Design
+
+```
 sudo raspi-config -- extend partitition
 
 sudo apt-get update
@@ -411,3 +414,4 @@ Whew! This sets up the internal Raspberry Pi WatchDog.
 
 ----------------------------------------
 
+```
