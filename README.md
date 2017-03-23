@@ -8,24 +8,30 @@ Alisa needs a home. Right now it is a small **Raspberry PI** box that is nailed 
 
 ![~ Sweet ~](~alisa.jpg)
 
+Alisa brains are powered by https://github.com/sergejey/majordomo.git
+
 # ~ Design
+
+Right now she is a series of triggers that respond to commands sent to [hackerspace telegram](https://telegram.me/joinchat/Bxa3CT7ai59igvC1dP95Aw) channel.
+
+# ~ Setup
 
 ```
 sudo raspi-config -- extend partitition
 
 sudo apt-get update
 sudo apt-get upgrade
-(skip) sudo apt-get upgrade --fix-missing
+#(skip) sudo apt-get upgrade --fix-missing
 sudo apt-get clean
-// installign midnight commander
+#// installing midnight commander
 
 sudo apt-get install -y ffmpeg ntpdate mc apache2 apache2-utils  php5 libapache2-mod-php5 php5-common mysql-client php-pear php5-mysql php5-curl php5-gd php5-idn php5-imagick php5-imap php5-mcrypt php5-memcache php5-mhash php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl php5-json mpayer
 ffmpeg  ?
 
-//checking http://192.168.0.58/ -- it works
+#//checking http://192.168.0.58/ -- it works
 
 service apache2 stop
-// tweaking /etc/apache2/envvars: (nado li???)
+#// tweaking /etc/apache2/envvars: (nado li???)
 APACHE_RUN_USER=pi
 APACHE_RUN_GROUP=pi
 sudo chown pi:pi /var/www
@@ -46,8 +52,8 @@ fixing /etc/php5/cli/php.ini
 error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT
 
 
-//mysql and phpmyadmin
-//new password for root: rootpsw
+#//mysql and phpmyadmin
+#//new password for root: rootpsw
 sudo apt-get install -y mysql-server
 /*
 side-note:
