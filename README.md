@@ -8,7 +8,7 @@ Alisa needs a home. Right now it is a small **Raspberry PI** box that is nailed 
 
 ![~ Sweet ~](~alisa.jpg)
 
-Alisa brains are powered by https://github.com/sergejey/majordomo.git
+Alisa brains are powered by https://github.com/sergejey/majordomo.git and tentacles are connected to https://github.com/minsk-hackerspace/spynet.git
 
 # ~ Design
 
