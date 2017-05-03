@@ -17,15 +17,17 @@ Right now she is a series of triggers that respond to commands sent to [hackersp
 # ~ Setup
 
 ```
+# setup raspberry
 sudo raspi-config -- extend partitition
+```
 
-sudo apt-get update
-sudo apt-get upgrade
-#(skip) sudo apt-get upgrade --fix-missing
-sudo apt-get clean
-#// installing midnight commander
+```
+# setup ubuntu/debian
+sudo ./01install.sh
+```
 
-sudo apt-get install -y ffmpeg ntpdate mc apache2 apache2-utils  php5 libapache2-mod-php5 php5-common mysql-client php-pear php5-mysql php5-curl php5-gd php5-idn php5-imagick php5-imap php5-mcrypt php5-memcache php5-mhash php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl php5-json mpayer
+```	
+sudo apt-get install -y ffmpeg ntpdate mc mysql-client php-pear php5-mysql php5-curl php5-gd php5-idn php5-imagick php5-imap php5-mcrypt php5-memcache php5-mhash php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl php5-json mpayer
 ffmpeg  ?
 
 #//checking http://192.168.0.58/ -- it works
@@ -41,14 +43,16 @@ sudo chown pi:pi /var/log/apache2/
 sudo service apache2 start
 
 
-edit /etc/php5/apache2/php.ini
+edit /etc/php/7.0/apache2/php.ini
+# cat /etc/php/7.0/apache2/php.ini | grep error_r
 error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT
+# cat /etc/php/7.0/apache2/php.ini | grep disp
 display_errors = On
 post_max_size = 50M
 upload_max_filesize = 50M
 sudo service apache2 restart
 
-fixing /etc/php5/cli/php.ini
+fixing /etc/php/7.0/cli/php.ini
 error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT
 
 
@@ -80,8 +84,6 @@ write_enable=YES
 // path /var/www
 // i was able to upload php test script but it didn't work because uploaded by pi:pi user
 // test script got working! service apache2 stop
-
-//tweak /etc/php5/apache2/php.ini (poka ostavim kak est)
 
 sudo chmod 0777 /var/www
 
@@ -187,7 +189,9 @@ import dump: db_terminal
 (skip) php_admin_value open_basedir /usr/share/phpmyadmin/:/etc/phpmyadmin/:/var/lib/phpmyadmin/:/tmp
 
 OOKKK!
+```
 
+```
 // installing majordomo
 cd /var/www
 sudo rm -rf *
