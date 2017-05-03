@@ -4,4 +4,4 @@ apt-get upgrade -y
 apt-get clean
 
 echo --- installing prerequisites ---
-apt-get install php -y
+apt-get install -y php php-mysql

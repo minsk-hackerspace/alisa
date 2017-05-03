@@ -192,10 +192,15 @@ OOKKK!
 ```
 
 ```
-// installing majordomo
-cd /var/www
-sudo rm -rf *
-git clone --depth=1 https://github.com/sergejey/majordomo.git ./
+# setup majordomo (smart home platform)
+./02checkout.sh
+```
+
+```
+# monitoring errors
+#tail -n 20 -f /var/log/apache2/error.log
+
+
 create config.php
 
 chown -Rf pi:pi *
