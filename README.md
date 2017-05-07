@@ -24,6 +24,20 @@ sudo raspi-config -- extend partitition
 ```
 # setup ubuntu/debian
 sudo ./01install.sh
+
+# setup PHP
+cp etc/php.ini /etc/php/7.0/apache2/php.ini
+# see changes, it should be
+#  * turn off (and not notices, deprecated and strict warnings
+#error_reporting = E_ALL & ~E_NOTICE & ~E_STRICT & ~E_DEPRECATED
+#display_errors = On
+#  * post data > 8M, upload > 2M
+#post_max_size = 50M
+#upload_max_filesize = 50M
+diff -u etc/php.ini-production etc/php.ini
+sudo service apache2 restart
+
+
 ```
 
 ```	
@@ -41,19 +55,6 @@ sudo chmod 775 /var/www
 sudo chown pi:pi /var/lock/apache2
 sudo chown pi:pi /var/log/apache2/
 sudo service apache2 start
-
-
-edit /etc/php/7.0/apache2/php.ini
-# cat /etc/php/7.0/apache2/php.ini | grep error_r
-error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT
-# cat /etc/php/7.0/apache2/php.ini | grep disp
-display_errors = On
-post_max_size = 50M
-upload_max_filesize = 50M
-sudo service apache2 restart
-
-fixing /etc/php/7.0/cli/php.ini
-error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT
 
 
 #//mysql and phpmyadmin
