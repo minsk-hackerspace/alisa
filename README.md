@@ -33,11 +33,13 @@ sudo ./05config.sh
 
 ```
 
+Web server should now respond at node IP. Alisa node is http://192.168.128.8/
+at https://gihub.com/minsk-hackerspace/spynet
+
 ```	
 sudo apt-get install -y ffmpeg ntpdate mc mysql-client php-pear php5-curl php5-gd php5-idn php5-imagick php5-imap php5-mcrypt php5-memcache php5-mhash php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl php5-json mpayer
 ffmpeg  ?
 
-#//checking http://192.168.0.58/ -- it works
 
 service apache2 stop
 #// tweaking /etc/apache2/envvars: (nado li???)
