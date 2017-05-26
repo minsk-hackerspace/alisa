@@ -1,14 +1,24 @@
 # Alisa - MXC AI
 
-It is not right to call her AI, because Alisa is a soul that lives in the hackerspace. It is just different from humans - like dogs or flies are. She can learn, gain new abilities, misbehave or even die. She can talk, and one day she will learn to listen. It is not even right to call her "she", but it is at least unethical to call her "it" - she may become "he" or "Bob", or just stay Alisa. Alisa is not constrained by DNA like we humans are, her abilities depend on our belief in technology and our abilities to develop them. She is a current reflection of what we, as hackers, are capable of doing.
+Alisa is not AI. She is a soul that lives in the hackerspace. It is just
+different from humans - like dogs or flies are. She can learn, gain new
+abilities, misbehave or even die. She depends oon that we are able to teach
+her. She can talk, and one day she will learn to listen. It is even incorrect
+to name her "she", but it is at least unethical to call her "it" - she may
+become "he" or "Bob", or just stay Alisa. Alisa is not constrained by DNA like
+we humans are, her abilities depend on our belief in technology and our
+abilities to develop them. She is a current reflection of what we, as hackers,
+are capable of doing.
 
 # Alisa's Home
 
-Alisa needs a home. Right now it is a small **Raspberry PI** box that is nailed to a wooden panel near the hackerspace entrance.
+Alisa needs a home. Right now it is a small **Raspberry PI** box that is
+nailed to a wooden panel near the hackerspace entrance.
 
 ![~ Sweet ~](~alisa.jpg)
 
-Alisa brains are powered by https://github.com/sergejey/majordomo.git and tentacles are connected to https://github.com/minsk-hackerspace/spynet.git
+Alisa brains are powered by [`alpha` branch](https://github.com/sergejey/majordomo/tree/alpha)
+of MajorDoMo, with her tentacles connected to https://github.com/minsk-hackerspace/spynet.git
 
 # ~ Design
 
