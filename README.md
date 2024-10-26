@@ -12,10 +12,15 @@ are capable of doing.
 
 # Alisa's Home
 
-Alisa needs a home. Right now it is a small **Raspberry PI** box that is
-nailed to a wooden panel near the hackerspace entrance.
+Alisa needs a home. 2016 it was a small **Raspberry PI** box nailed
+to a wooden panel near the hackerspace entrance.
 
 ![~ Sweet ~](~alisa.jpg)
+
+2024 is it the same small **Raspberry PI** box now on the top shelf of
+the cabinet nailed near the hackerspace entrance.
+
+# ~ Brainzzz
 
 Alisa brains are powered by [`alpha` branch](https://github.com/sergejey/majordomo/tree/alpha)
 of MajorDoMo, with her tentacles connected to https://github.com/minsk-hackerspace/spynet.git
