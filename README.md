@@ -20,6 +20,8 @@ to a wooden panel near the hackerspace entrance.
 2024 is it the same small **Raspberry PI** box now on the top shelf of
 the cabinet nailed near the hackerspace entrance.
 
+![~ Sweet24 ~](~alisa2024.jpg)
+
 # ~ Brainzzz
 
 Alisa brains are powered by [`alpha` branch](https://github.com/sergejey/majordomo/tree/alpha)
